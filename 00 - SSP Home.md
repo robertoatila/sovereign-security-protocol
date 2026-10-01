@@ -1,23 +1,23 @@
-# Sovereign Security Protocol / Protocolo de Segurança Soberana
+# Protocolo de Segurança Soberana — início (PT-BR)
 
-> SSP v13.4.0 is the source basis. Community Edition 0.1.0 is a bilingual proposal, not a canonical successor or certification.
+> **Para ler o texto completo:** [[protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR|SSP v13.4.0 — protocolo integral em português]].
 >
-> A base é a SSP v13.4.0. A Community Edition 0.1.0 é uma proposta bilíngue, não sucessora canônica nem certificação.
+> O material em inglês disponível hoje é um resumo comunitário dos 13 controles; ainda não é uma tradução integral.
 
-## Navigate / Navegar
+## Acesso direto
 
-- [[docs/pt-BR/protocolo|Protocolo — PT-BR]]
-- [[docs/en/protocol|Protocol — English]]
-- [[docs/pt-BR/adocao-e-evidencias|Adoção e evidências — PT-BR]]
+- [[protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR|1. Protocolo integral v13.4.0 — PT-BR]]
+- [[docs/pt-BR/protocolo|2. Resumo comunitário dos 13 controles — PT-BR]]
+- [[docs/pt-BR/adocao-e-evidencias|3. Adoção e evidências]]
+- [[docs/pt-BR/agentes-jarvis-obsidian|4. Agentes, J.A.R.V.I.S. e Obsidian]]
+- [[docs/research/provenance|Proveniência, integridade e licença]]
+- [[docs/research/references|Referências e versões consultadas]]
+- [[docs/research/revisao-v13.4|Problemas observados e melhorias propostas]]
+
+## English
+
+- [[docs/en/protocol|13-control community summary — English]]
 - [[docs/en/adoption-and-evidence|Adoption and evidence — English]]
-- [[docs/pt-BR/agentes-jarvis-obsidian|Agentes, J.A.R.V.I.S. e Obsidian — PT-BR]]
-- [[docs/en/agentic-jarvis-obsidian|Agentic AI, J.A.R.V.I.S. and Obsidian — English]]
-- [[docs/research/references|Fontes oficiais / Official references]]
-- [[docs/research/provenance|Proveniência / Provenance]]
-- [[docs/research/revisao-v13.4|Revisão da fonte / Source review]]
+- [[docs/en/agentic-jarvis-obsidian|Agents, J.A.R.V.I.S., and Obsidian — English]]
 
-## Reading the map / Como ler o mapa
-
-Open `SSP-13.4.canvas` for a visual index. A relation in the graph helps navigation; it does not grant trust, approval, or execution permission.
-
-Abra `SSP-13.4.canvas` para ver o índice visual. Uma ligação no grafo ajuda a navegar; ela não concede confiança, aprovação ou permissão de execução.
+O Canvas `SSP-13.4.canvas` é apenas um índice visual. O texto Markdown é a referência de leitura; o Canvas não concede confiança, aprovação ou permissão de execução.

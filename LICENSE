@@ -1,11 +1,14 @@
-The original Sovereign Security Protocol v13.4.0 remains attributed to its
-source repository and is linked from docs/research/provenance.md. This project
-does not redistribute that full source document.
-
-Unless a file states otherwise, the original material authored for this
-community edition is licensed under the Creative Commons Attribution 4.0
-International License (CC BY 4.0):
+Unless a file or its accompanying notice says otherwise, original explanatory
+material authored for this community edition is licensed under the Creative
+Commons Attribution 4.0 International License (CC BY 4.0):
 
 https://creativecommons.org/licenses/by/4.0/legalcode
 
 SPDX-License-Identifier: CC-BY-4.0
+
+The verbatim Sovereign Security Protocol v13.4.0 source copy in
+`protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR.md` is licensed under Apache-2.0,
+as in its source repository. The full license and source attribution are
+included in `protocol/v13.4/LICENSE-APACHE-2.0.txt` and
+`protocol/v13.4/NOTICE.md`. Any translation of that source must be clearly
+identified as unofficial and retain the source license.

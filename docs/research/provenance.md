@@ -13,7 +13,9 @@
 | Git blob | `ede03fb9c6d5c744249e2bc8a4016d52a438c715` |
 | SHA-256 of source bytes | `a83e8a27c02f5c57befc2cf0e9f0b7c8a020b2618a6f28ca55ce62b070f092f6` |
 | Size / lines | 96,328 bytes / 6,678 lines |
-| Local content check | The workspace copy matched the named Git blob and the source repository's SHA-256 record |
+| Repository copy | [`protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR.md`](../../protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR.md) |
+| Source license | Apache-2.0; full text included at [`protocol/v13.4/LICENSE-APACHE-2.0.txt`](../../protocol/v13.4/LICENSE-APACHE-2.0.txt) |
+| Content check | The repository copy was extracted directly from the named Git blob; its bytes and SHA-256 match |
 
 The exact commit link is the provenance anchor. The source's declared canonical status describes that originating protocol; it does not make this independent community edition canonical.
 
@@ -32,7 +34,7 @@ The exact commit link is the provenance anchor. The source's declared canonical 
 - Exact-plan approval guidance for agent actions and a non-authoritative Obsidian projection contract.
 - A dated reference map and an explicit review of source ambiguities in [`revisao-v13.4.md`](revisao-v13.4.md).
 
-The full 6,678-line source is linked, not copied into this repository. This keeps its original context and ownership in the originating project and avoids publishing local J.A.R.V.I.S. state or private Obsidian content.
+The full 6,678-line Portuguese source is now reproduced byte-for-byte at [`protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR.md`](../../protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR.md). The root README links to it before the shorter community summary. Its canonical status remains the status declared by the originating file; the community edition is not a successor. This repository contains no local J.A.R.V.I.S. state or private Obsidian content.
 
 ## J.A.R.V.I.S. and Obsidian research boundary
 
@@ -42,4 +44,4 @@ The Obsidian files in this repository are a public documentation view authored f
 
 ## Attribution and license
 
-The originating v13.4 source remains attributed to the linked repository. This repository links to and summarizes it, but does not redistribute its full text. Original material authored specifically for this community edition is licensed as described in [`LICENSE`](../../LICENSE). Referenced standards and third-party materials keep their own licenses and terms.
+The v13.4 source copy is redistributed under the source repository's Apache-2.0 license, with its exact source commit and license included. Original explanatory material authored specifically for this community edition is licensed as described in [`LICENSE`](../../LICENSE). Any future English translation of the source must be marked unofficial, linked to the same source commit, and preserve its license. Referenced standards and third-party materials keep their own licenses and terms.

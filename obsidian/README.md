@@ -1,13 +1,23 @@
-# Obsidian view / Vista para Obsidian
+# Obsidian: índice público da SSP
 
-Open the **repository root** as a vault. The repository is plain Markdown plus one JSON Canvas file; no community plugin or private workspace configuration is required.
+## Português (PT-BR)
 
-Abra a **raiz do repositório** como vault. O conteúdo usa Markdown comum e um arquivo JSON Canvas; não exige plugin comunitário nem configuração privada de workspace.
+Abra a raiz do repositório como vault. O conteúdo usa Markdown comum e um arquivo JSON Canvas; não exige plugin comunitário nem configuração privada de workspace.
 
-- Home note: [`00 - SSP Home.md`](../00%20-%20SSP%20Home.md)
-- Canvas: [`SSP-13.4.canvas`](../SSP-13.4.canvas)
-- Textual protocol source: [`PT-BR`](../docs/pt-BR/protocolo.md) · [`English`](../docs/en/protocol.md)
+- **Texto integral para leitura:** [`SSP v13.4.0 completa — PT-BR`](../protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR.md)
+- [Nota inicial](../00%20-%20SSP%20Home.md)
+- [Canvas](../SSP-13.4.canvas)
+- [Resumo comunitário de 13 controles — PT-BR](../docs/pt-BR/protocolo.md)
 
-The home note and Canvas are navigation surfaces, not policy engines or proof of control effectiveness. Their node IDs use the `ssp:` namespace and are authored for this repository. The J.A.R.V.I.S. bridge and the `jarvis:projection:` namespace remain owned by the existing J.A.R.V.I.S. project.
+A nota inicial e o Canvas são índices de navegação, não mecanismos de política nem prova de eficácia. Os IDs usam o namespace `ssp:` e pertencem a este repositório. A bridge J.A.R.V.I.S. e o namespace `jarvis:projection:` continuam pertencendo ao projeto J.A.R.V.I.S. existente.
 
-A nota inicial e o Canvas são superfícies de navegação, não mecanismos de política nem prova de eficácia. Os IDs usam o namespace `ssp:` e pertencem a este repositório. A bridge J.A.R.V.I.S. e o namespace `jarvis:projection:` continuam pertencendo ao projeto J.A.R.V.I.S. existente.
+## English
+
+Open the repository root as a vault. It uses plain Markdown and one JSON Canvas file; no community plugin or private workspace configuration is required.
+
+- **Full source text:** [`SSP v13.4.0 — Portuguese`](../protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR.md)
+- [Home note](../00%20-%20SSP%20Home.md)
+- [Canvas](../SSP-13.4.canvas)
+- [13-control community summary — English](../docs/en/protocol.md)
+
+The home note and Canvas are navigation surfaces, not policy engines or proof of control effectiveness. Their node IDs use the `ssp:` namespace and are authored for this repository. The existing J.A.R.V.I.S. bridge and `jarvis:projection:` namespace remain owned by that project.
