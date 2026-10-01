@@ -13,4 +13,8 @@ Os guias em [`docs/pt-BR`](../../docs/pt-BR/) e [`docs/en`](../../docs/en/) são
 
 ## Materiais em inglês
 
-O material em inglês disponível é o [resumo comunitário de 13 controles](../../docs/en/protocol.md), acompanhado de guias de adoção e integração. Ele não é uma tradução integral da fonte.
+O [protocolo integral traduzido para inglês](SSP_v13.4_FULL_EN_COMMUNITY.md) está disponível como rascunho comunitário automático. Ainda precisa de revisão técnica humana e não é canônico. O [resumo de 13 controles](../../docs/en/protocol.md) e os guias de adoção e integração são materiais complementares.
+
+## English
+
+The [complete English translation](SSP_v13.4_FULL_EN_COMMUNITY.md) is an automatic community draft awaiting human technical review. It is not canonical. The [13-control summary](../../docs/en/protocol.md) and adoption/integration guides are complementary materials.

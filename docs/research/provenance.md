@@ -36,6 +36,8 @@ The exact commit link is the provenance anchor. The source's declared canonical 
 
 The full 6,678-line Portuguese source is now reproduced byte-for-byte at [`protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR.md`](../../protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR.md). The root README links to it before the shorter community summary. Its canonical status remains the status declared by the originating file; the community edition is not a successor. This repository contains no local J.A.R.V.I.S. state or private Obsidian content.
 
+A complete English rendering is published at [`protocol/v13.4/SSP_v13.4_FULL_EN_COMMUNITY.md`](../../protocol/v13.4/SSP_v13.4_FULL_EN_COMMUNITY.md). It is machine-translated, non-canonical, and awaits human technical review. It is derived from the exact same source commit and licensed with the source material; the PT-BR document remains authoritative for interpretation.
+
 ## J.A.R.V.I.S. and Obsidian research boundary
 
 The synthesis used the J.A.R.V.I.S. threat-model and trust-boundary material, the existing `CognitiveVaultBridge.sync_registry` ownership model, and the managed Markdown/Canvas projection design. The key lesson is to distinguish a documented target control from a mechanism demonstrated in a particular runtime. This repository carries that lesson forward as a normative requirement; it does not publish private vault content, telemetry, workspace settings, credentials, or a runtime audit report.
@@ -44,4 +46,4 @@ The Obsidian files in this repository are a public documentation view authored f
 
 ## Attribution and license
 
-The v13.4 source copy is redistributed under the source repository's Apache-2.0 license, with its exact source commit and license included. Original explanatory material authored specifically for this community edition is licensed as described in [`LICENSE`](../../LICENSE). Any future English translation of the source must be marked unofficial, linked to the same source commit, and preserve its license. Referenced standards and third-party materials keep their own licenses and terms.
+The v13.4 source copy and its English translation are redistributed under the source repository's Apache-2.0 license, with the exact source commit and license included. The translation is automatic and awaits human review. Original explanatory material authored specifically for this community edition is licensed as described in [`LICENSE`](../../LICENSE). Referenced standards and third-party materials keep their own licenses and terms.

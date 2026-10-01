@@ -14,6 +14,8 @@ Este diretório contém uma cópia integral e sem alterações do **Protocolo de
 
 O arquivo [`PROTOCOLO_INTEGRAL_v13.4_PT-BR.md`](PROTOCOLO_INTEGRAL_v13.4_PT-BR.md) foi extraído diretamente do Git blob fixado acima. Nenhuma melhoria editorial foi aplicada dentro do texto-fonte. Propostas e observações ficam separadas em [`docs/research/revisao-v13.4.md`](../../docs/research/revisao-v13.4.md).
 
+A [tradução integral em inglês](SSP_v13.4_FULL_EN_COMMUNITY.md) é um rascunho automático comunitário, pendente de revisão técnica humana. Ela não é canônica; use o texto PT-BR para resolver qualquer divergência.
+
 ## English
 
 This directory contains a complete, unchanged copy of **Sovereign Security Protocol v13.4.0**, which declares `CANÔNICO` in its source repository. Canonical status belongs to the original document and its repository's authority; this copy does not create a new canonical version.
@@ -27,3 +29,5 @@ This directory contains a complete, unchanged copy of **Sovereign Security Proto
 - Source license: Apache-2.0; the full license text is in [`LICENSE-APACHE-2.0.txt`](LICENSE-APACHE-2.0.txt)
 
 The file [`PROTOCOLO_INTEGRAL_v13.4_PT-BR.md`](PROTOCOLO_INTEGRAL_v13.4_PT-BR.md) was extracted directly from the pinned Git blob. No editorial improvements were inserted into the source text. Proposals and review notes are kept separately in [`docs/research/revisao-v13.4.md`](../../docs/research/revisao-v13.4.md).
+
+The [complete English translation](SSP_v13.4_FULL_EN_COMMUNITY.md) is an automatic community draft awaiting human technical review. It is not canonical; use the Portuguese source to resolve any discrepancy.

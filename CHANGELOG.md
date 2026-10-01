@@ -2,6 +2,18 @@
 
 This changelog tracks this repository's community edition, not the canonical source protocol's release history.
 
+## Unreleased — full English translation
+
+- Added a complete machine-translated English draft of SSP v13.4.0; original PT-BR bytes remain unchanged and authoritative.
+- Preserved Markdown line structure, fenced code, inline code, and link destinations during translation; marked the English draft as non-canonical and awaiting human technical review.
+- Updated Portuguese and English entry pages, the source notice, provenance, and Obsidian navigation so each language opens its full text directly.
+
+### PT-BR
+
+- Adicionada uma tradução automática integral da SSP v13.4.0 para inglês; os bytes do original PT-BR seguem inalterados e são a referência normativa.
+- Preservados a estrutura de linhas Markdown, blocos de código, trechos inline e destinos de links; a versão inglesa está marcada como não canônica e pendente de revisão técnica humana.
+- Atualizadas as entradas PT-BR e English, o aviso de origem, a proveniência e a navegação do Obsidian para abrir diretamente o texto integral de cada idioma.
+
 ## Unreleased — publication and access correction
 
 - Published the full 6,678-line SSP v13.4.0 source in Portuguese, extracted byte-for-byte from its pinned source commit and accompanied by its Apache-2.0 license and notice.
@@ -9,7 +21,7 @@ This changelog tracks this repository's community edition, not the canonical sou
 - Renamed the 13-control guides as community summaries and added an explicit warning that they do not replace the full source.
 - Updated the Obsidian home note and Canvas to open the complete PT-BR text first.
 - Kept source content unchanged; source-review proposals remain separate.
-- The English guide remains a summary, not a full translation of the source.
+- At that point, the English guide was a summary; a separate full translation draft was added in the later unreleased entry above.
 
 ### PT-BR
 
@@ -18,7 +30,7 @@ This changelog tracks this repository's community edition, not the canonical sou
 - Os guias de 13 controles agora são chamados de resumos comunitários e avisam que não substituem o texto integral.
 - A nota inicial e o Canvas do Obsidian agora abrem primeiro o texto integral em PT-BR.
 - O conteúdo da fonte foi preservado; propostas da revisão continuam separadas.
-- O guia em inglês continua sendo um resumo, não uma tradução integral da fonte.
+- Naquele momento, o guia em inglês era um resumo; a entrada acima registra a tradução integral comunitária adicionada depois.
 
 ## 0.1.0 — draft — 2026-10-01
 

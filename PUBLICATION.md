@@ -7,7 +7,7 @@
 **Initial content commit on `main`:** `77a4c20`  
 **Listing metadata applied:** 2026-10-01
 
-**Description:** Full SSP v13.4.0 source in Portuguese, with bilingual community summaries for application security, secure SDLC, AI agents, MCP, and evidence-based adoption.
+**Description:** Full SSP v13.4.0 source in Portuguese with a complete English translation draft and bilingual community guides for application security, secure SDLC, AI agents, MCP, and evidence-based adoption.
 
 **Topics:** `security`, `application-security`, `ai-security`, `agentic-ai`, `mcp`, `secure-sdlc`, `software-supply-chain`, `slsa`, `nist`, `owasp`, `obsidian`, `bilingual`, `portuguese`
 
@@ -18,7 +18,7 @@
 **Commit inicial de conteúdo em `main`:** `77a4c20`  
 **Metadados da página aplicados:** 2026-10-01
 
-**Descrição:** Texto integral da SSP v13.4.0 em PT-BR, com resumos comunitários bilíngues sobre segurança de aplicações, SDLC seguro, agentes de IA, MCP e adoção baseada em evidências.
+**Descrição:** Texto integral da SSP v13.4.0 em PT-BR e rascunho de tradução integral em inglês, com guias comunitários bilíngues sobre segurança de aplicações, SDLC seguro, agentes de IA, MCP e adoção baseada em evidências.
 
 **Tópicos:** os tópicos em inglês acima facilitam a descoberta internacional; a documentação oferece versões completas em inglês e PT-BR.
 

@@ -1,6 +1,6 @@
 # Resumo comunitário da SSP v13.4 — 13 controles (PT-BR)
 
-> **Quer o protocolo completo?** [Abra aqui a SSP v13.4.0 integral em português](../../protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR.md). Esta página é só um resumo comunitário dos 13 controles; não substitui nenhuma seção da fonte.
+> **Quer ler o protocolo completo?** [Texto integral em português (referência)](../../protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR.md) · [tradução integral automática em inglês — rascunho para revisão](../../protocol/v13.4/SSP_v13.4_FULL_EN_COMMUNITY.md). Esta página é só um resumo comunitário dos 13 controles; não substitui nenhuma seção da fonte.
 
 **Base:** Protocolo de Segurança Soberana v13.4.0. **Estado desta edição:** proposta comunitária, não canônica.
 

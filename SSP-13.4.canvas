@@ -2,8 +2,9 @@
   "nodes": [
     { "id": "ssp:home", "type": "file", "file": "00 - SSP Home.md", "x": 0, "y": 0, "width": 420, "height": 220 },
     { "id": "ssp:protocol-pt", "type": "file", "file": "protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR.md", "x": -560, "y": 320, "width": 520, "height": 300, "color": "1" },
-    { "id": "ssp:protocol-en", "type": "file", "file": "docs/en/protocol.md", "x": 560, "y": 320, "width": 460, "height": 260, "color": "5" },
+    { "id": "ssp:protocol-en", "type": "file", "file": "protocol/v13.4/SSP_v13.4_FULL_EN_COMMUNITY.md", "x": 560, "y": 320, "width": 520, "height": 300, "color": "5" },
     { "id": "ssp:summary-pt", "type": "file", "file": "docs/pt-BR/protocolo.md", "x": -560, "y": 700, "width": 460, "height": 220, "color": "1" },
+    { "id": "ssp:summary-en", "type": "file", "file": "docs/en/protocol.md", "x": 560, "y": 700, "width": 460, "height": 220, "color": "5" },
     { "id": "ssp:evidence-pt", "type": "file", "file": "docs/pt-BR/adocao-e-evidencias.md", "x": -900, "y": 760, "width": 460, "height": 260 },
     { "id": "ssp:evidence-en", "type": "file", "file": "docs/en/adoption-and-evidence.md", "x": 440, "y": 760, "width": 460, "height": 260 },
     { "id": "ssp:agents-pt", "type": "file", "file": "docs/pt-BR/agentes-jarvis-obsidian.md", "x": -900, "y": 1200, "width": 460, "height": 300, "color": "2" },
@@ -17,6 +18,7 @@
     { "id": "ssp:edge-home-pt", "fromNode": "ssp:home", "toNode": "ssp:protocol-pt", "fromSide": "left", "toSide": "top", "label": "PT-BR" },
     { "id": "ssp:edge-home-en", "fromNode": "ssp:home", "toNode": "ssp:protocol-en", "fromSide": "right", "toSide": "top", "label": "English" },
     { "id": "ssp:edge-full-to-summary-pt", "fromNode": "ssp:protocol-pt", "toNode": "ssp:summary-pt", "fromSide": "bottom", "toSide": "top", "label": "Resumo comunitário" },
+    { "id": "ssp:edge-full-to-summary-en", "fromNode": "ssp:protocol-en", "toNode": "ssp:summary-en", "fromSide": "bottom", "toSide": "top", "label": "Community summary" },
     { "id": "ssp:edge-pt-evidence", "fromNode": "ssp:protocol-pt", "toNode": "ssp:evidence-pt", "fromSide": "bottom", "toSide": "top" },
     { "id": "ssp:edge-en-evidence", "fromNode": "ssp:protocol-en", "toNode": "ssp:evidence-en", "fromSide": "bottom", "toSide": "top" },
     { "id": "ssp:edge-pt-crosswalk", "fromNode": "ssp:protocol-pt", "toNode": "ssp:crosswalk", "fromSide": "bottom", "toSide": "top", "label": "rastreabilidade" },

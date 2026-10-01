@@ -1,6 +1,6 @@
 # SSP Community Edition 0.1.0 — 13-Control Summary (English)
 
-> **Need the complete protocol?** [Open the full SSP v13.4.0 source in Portuguese](../../protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR.md). This page is a short community summary of 13 controls; it does not replace any source section.
+> **Need the complete protocol in English?** [Open the complete automatic English community translation](../../protocol/v13.4/SSP_v13.4_FULL_EN_COMMUNITY.md). It is a review draft, not canonical, and needs human technical review. The [Portuguese source (PT-BR)](../../protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR.md) is the reference for resolving wording differences. This page remains a separate 13-control community summary.
 
 **Basis:** Sovereign Security Protocol v13.4.0. **Status of this edition:** community proposal, not canonical.
 

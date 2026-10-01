@@ -10,11 +10,12 @@ O documento de origem declara o estado `CANÔNICO`. Esse estado se refere à fon
 
 ## O que há em inglês
 
+- **Protocolo integral traduzido para inglês:** [versão comunitária em revisão](protocol/v13.4/SSP_v13.4_FULL_EN_COMMUNITY.md). É uma tradução automática não canônica e ainda precisa de revisão técnica humana.
 - [Resumo comunitário dos 13 controles — English](docs/en/protocol.md)
 - [Adoção e evidências — English](docs/en/adoption-and-evidence.md)
 - [Agentes, J.A.R.V.I.S. e Obsidian — English](docs/en/agentic-jarvis-obsidian.md)
 
-**A página em inglês é uma adaptação resumida. Ela não substitui o texto integral em português.** Os dois idiomas ficam em documentos separados; este README é a entrada em PT-BR.
+O texto integral em PT-BR é a referência para resolver divergências. A tradução inglesa está identificada como rascunho automático, não como versão normativa revisada. Os dois idiomas ficam em documentos separados; este README é a entrada em PT-BR.
 
 ## Comece aqui
 
@@ -30,6 +31,7 @@ O documento de origem declara o estado `CANÔNICO`. Esse estado se refere à fon
 
 - O protocolo integral agora aparece como primeiro acesso, em vez de ficar atrás da síntese de 13 controles.
 - O texto PT-BR foi copiado sem alterações do commit de origem; commit, blob, hash e licença estão registrados.
+- Foi acrescentada uma tradução integral automática em inglês, marcada como comunitária, não canônica e pendente de revisão humana.
 - Os resumos comunitários estão identificados como resumos, não como substitutos da SSP.
 - As observações editoriais e propostas de atualização permanecem separadas do texto canônico.
 - A página inicial, o índice do Obsidian e o Canvas priorizam a navegação em português.
