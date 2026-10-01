@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    { "id": "ssp:home", "type": "file", "file": "00 - SSP Home.md", "x": 0, "y": 0, "width": 420, "height": 220 },
+    { "id": "ssp:protocol-pt", "type": "file", "file": "docs/pt-BR/protocolo.md", "x": -560, "y": 320, "width": 460, "height": 260, "color": "1" },
+    { "id": "ssp:protocol-en", "type": "file", "file": "docs/en/protocol.md", "x": 560, "y": 320, "width": 460, "height": 260, "color": "5" },
+    { "id": "ssp:evidence-pt", "type": "file", "file": "docs/pt-BR/adocao-e-evidencias.md", "x": -900, "y": 760, "width": 460, "height": 260 },
+    { "id": "ssp:evidence-en", "type": "file", "file": "docs/en/adoption-and-evidence.md", "x": 440, "y": 760, "width": 460, "height": 260 },
+    { "id": "ssp:agents-pt", "type": "file", "file": "docs/pt-BR/agentes-jarvis-obsidian.md", "x": -900, "y": 1200, "width": 460, "height": 300, "color": "2" },
+    { "id": "ssp:agents-en", "type": "file", "file": "docs/en/agentic-jarvis-obsidian.md", "x": 440, "y": 1200, "width": 460, "height": 300, "color": "6" },
+    { "id": "ssp:crosswalk", "type": "file", "file": "control-crosswalk.csv", "x": 0, "y": 760, "width": 360, "height": 180, "color": "3" },
+    { "id": "ssp:references", "type": "file", "file": "docs/research/references.md", "x": 0, "y": 1200, "width": 420, "height": 260, "color": "4" },
+    { "id": "ssp:provenance", "type": "file", "file": "docs/research/provenance.md", "x": 0, "y": 1640, "width": 420, "height": 260 },
+    { "id": "ssp:review", "type": "file", "file": "docs/research/revisao-v13.4.md", "x": 560, "y": 1640, "width": 460, "height": 260, "color": "4" }
+  ],
+  "edges": [
+    { "id": "ssp:edge-home-pt", "fromNode": "ssp:home", "toNode": "ssp:protocol-pt", "fromSide": "left", "toSide": "top", "label": "PT-BR" },
+    { "id": "ssp:edge-home-en", "fromNode": "ssp:home", "toNode": "ssp:protocol-en", "fromSide": "right", "toSide": "top", "label": "English" },
+    { "id": "ssp:edge-pt-evidence", "fromNode": "ssp:protocol-pt", "toNode": "ssp:evidence-pt", "fromSide": "bottom", "toSide": "top" },
+    { "id": "ssp:edge-en-evidence", "fromNode": "ssp:protocol-en", "toNode": "ssp:evidence-en", "fromSide": "bottom", "toSide": "top" },
+    { "id": "ssp:edge-pt-crosswalk", "fromNode": "ssp:protocol-pt", "toNode": "ssp:crosswalk", "fromSide": "bottom", "toSide": "top", "label": "rastreabilidade" },
+    { "id": "ssp:edge-en-crosswalk", "fromNode": "ssp:protocol-en", "toNode": "ssp:crosswalk", "fromSide": "bottom", "toSide": "top", "label": "traceability" },
+    { "id": "ssp:edge-evidence-agent", "fromNode": "ssp:evidence-pt", "toNode": "ssp:agents-pt", "fromSide": "bottom", "toSide": "top" },
+    { "id": "ssp:edge-evidence-agent-en", "fromNode": "ssp:evidence-en", "toNode": "ssp:agents-en", "fromSide": "bottom", "toSide": "top" },
+    { "id": "ssp:edge-agents-refs", "fromNode": "ssp:agents-pt", "toNode": "ssp:references", "fromSide": "right", "toSide": "left" },
+    { "id": "ssp:edge-refs-prov", "fromNode": "ssp:references", "toNode": "ssp:provenance", "fromSide": "bottom", "toSide": "top" },
+    { "id": "ssp:edge-prov-review", "fromNode": "ssp:provenance", "toNode": "ssp:review", "fromSide": "right", "toSide": "left" }
+  ]
+}

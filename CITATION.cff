@@ -1,0 +1,6 @@
+cff-version: 1.2.0
+message: "If you use this community edition, cite the exact release and the source protocol identified in docs/research/provenance.md."
+title: "Sovereign Security Protocol — Community Edition"
+version: 0.1.0
+date-released: 2026-10-01
+license: CC-BY-4.0

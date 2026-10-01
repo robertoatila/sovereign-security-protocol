@@ -1,0 +1,25 @@
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+*.kdbx
+
+# Private runtime state, reports, and editor state
+state/
+reports/private/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.DS_Store
+Thumbs.db
+
+# Temporary output
+*.tmp
+*.bak
+*.swp
+~$*
