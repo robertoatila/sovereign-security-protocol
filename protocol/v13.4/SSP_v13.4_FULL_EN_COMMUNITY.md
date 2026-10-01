@@ -1,6 +1,6 @@
 # Security Protocol v13.4.0 — Complete English Community Translation
 
-> **Translation status:** Community translation; not the canonical source text.
+> **Translation status:** Machine-translated community draft; not canonical and not yet human-reviewed.
 > **Reference:** The complete source is [Portuguese (PT-BR)](./PROTOCOLO_INTEGRAL_v13.4_PT-BR.md), preserved from J.A.R.V.I.S. source commit c263c2a2ffed5e7ddc50cc0584c04420df07ef5c.
 > Use the Portuguese source to resolve wording or interpretation differences. The security requirements below are translated from the complete v13.4 source.
 
@@ -8,7 +8,7 @@
 🔐 SECURITY PROTOCOL v13.4
 
 Version: 13.4.0
-Base date: 09/29/2026
+Base date: September 29, 2026
 Status: CANONICAL
 Replaces: v7 v8 v9 v10 v11 v12 v13 v13.1 v13.2 v13.3
 Model: Secure by Design + Production Engineering
@@ -57,8 +57,8 @@ v13 preserves the 9 domains and adds:
 - real credentials must not exist in the agent's workspace without explicit need and minimum scope;
 - choice of package manager is not a security boundary: npm/pnpm/yarn/Bun require the same supply chain gates;
 - continuous monitoring of CVEs/dependencies becomes an explicit operational requirement;
-- accounts and administrative surfaces must be separated from common use; Isolated administrative plan is preferable at higher risk;
-- password hashing requires single salt managed by trusted implementation; do not create a manual salt/crypto mechanism;
+- accounts and administrative surfaces must be separated from common use; an isolated administrative plane is preferable at higher risk;
+- password hashing requires a unique salt managed by a trusted implementation; do not create a manual salt/crypto mechanism;
 - WAF/CDN/Cloudflare-equivalent is optional edge defense and never replaces AuthN/AuthZ/validation.
 - invalid evidence when produced by a commit/artifact other than the one that goes into production.
 
@@ -127,7 +127,7 @@ BUILD
 ↓
 DEPLOY
 ↓
-PLEASE NOTE
+OBSERVE
 ↓
 RESPOND
 ↓
