@@ -1,0 +1,25 @@
+{
+  "candidate": {
+    "repository": "robertoatila/sovereign-security-protocol",
+    "commit_sha": "6cf2654a938c46522c00d43a6d71b802ec3b3209",
+    "artifact_digest": "sha256:d849a6fe9a2b890123e456f789abcde0123456789abcdef0123456789abcdef0",
+    "environment": "staging-node-01"
+  },
+  "evaluator": "security-officer@sovereign.local",
+  "evaluated_at": "2026-10-22T16:20:00Z",
+  "control_results": {
+    "SSP-01": { "status": "PASS", "method": "manual_review", "evidence": "docs/pt-BR/guia-rapido-adocao.md" },
+    "SSP-02": { "status": "PASS", "method": "threat_model_review", "evidence": "threat-model-2026.json" },
+    "SSP-03": { "status": "PASS", "method": "integration_test", "evidence": "tests/authz_test.py" },
+    "SSP-04": { "status": "PASS", "method": "database_audit", "evidence": "audit/rls-verified.log" },
+    "SSP-05": { "status": "PASS", "method": "negative_config_test", "evidence": "tests/fail_closed_test.py" },
+    "SSP-06": { "status": "PASS", "method": "api_fuzzing", "evidence": "reports/dast_summary.json" },
+    "SSP-07": { "status": "PASS", "method": "sbom_analysis", "evidence": "build/sbom.spdx.json" },
+    "SSP-08": { "status": "PASS", "method": "network_isolation_audit", "evidence": "infra/iptables-rules.txt" },
+    "SSP-09": { "status": "PASS", "method": "agent_manifest_check", "evidence": "templates/AI_AGENT_MANIFEST.json" },
+    "SSP-10": { "status": "PASS", "method": "backup_restore_drill", "evidence": "reports/restore-drill-2026.log" },
+    "SSP-11": { "status": "PASS", "method": "audit_log_redaction_test", "evidence": "logs/redacted_sample.json" },
+    "SSP-12": { "status": "PASS", "method": "ssp_tool_validate", "evidence": "scripts/ssp_tool.py" },
+    "SSP-13": { "status": "PASS", "method": "compliance_matrix_review", "evidence": "docs/research/references.md" }
+  }
+}

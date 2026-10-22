@@ -2,6 +2,26 @@
 
 This changelog tracks this repository's community edition, not the canonical source protocol's release history.
 
+## 0.2.0 — 2026-10-22 — Verification Engine & Machine-Readable Controls
+
+- Added machine-readable JSON control specification (`protocol/v13.4/ssp-controls.json`) and formal JSON Schema (`schema/ssp-control.schema.json`).
+- Mapped all 13 controls to external standards: OWASP ASVS v4.0, NIST SP 800-53 r5, CIS Controls v8, ISO 27001:2022, and OWASP LLM Top 10 2025.
+- Created sovereign, zero-dependency Python verification CLI (`scripts/ssp_tool.py`) with link validation, crosswalk checking, schema validation, bilingual parity checking, and SSP-12 release gate evaluation.
+- Implemented GitHub Actions CI workflow (`.github/workflows/ci.yml`) validating repository integrity across Python 3.10, 3.11, and 3.12.
+- Created operational templates: `templates/EVIDENCE_RECORD.md`, `templates/SECURITY_EXCEPTION.md`, and `templates/AI_AGENT_MANIFEST.json`.
+- Authored pragmatic 3-Phase Quickstart Adoption Guides (`docs/pt-BR/guia-rapido-adocao.md` and `docs/en/quickstart-adoption.md`).
+- Expanded Obsidian visual index (`00 - SSP Home.md`) and Canvas (`SSP-13.4.canvas`) linking new specifications and templates.
+
+### PT-BR
+
+- Adicionada especificação legível por máquina em JSON (`protocol/v13.4/ssp-controls.json`) e JSON Schema formal (`schema/ssp-control.schema.json`).
+- Mapeamento dos 13 controles aos padrões externos: OWASP ASVS v4.0, NIST SP 800-53 r5, CIS Controls v8, ISO 27001:2022 e OWASP LLM Top 10 2025.
+- Criada CLI soberana e sem dependências externas (`scripts/ssp_tool.py`) para checagem de links, consistência de crosswalk, validação de schema, paridade bilíngue e portão de release SSP-12.
+- Implementado pipeline de CI com GitHub Actions (`.github/workflows/ci.yml`) testando Python 3.10, 3.11 e 3.12.
+- Criados modelos operacionais: `templates/EVIDENCE_RECORD.md`, `templates/SECURITY_EXCEPTION.md` e `templates/AI_AGENT_MANIFEST.json`.
+- Elaborado Guia Rápido de Adoção em 3 Fases (`docs/pt-BR/guia-rapido-adocao.md` e `docs/en/quickstart-adoption.md`).
+- Expandido o índice visual do Obsidian (`00 - SSP Home.md`) e Canvas (`SSP-13.4.canvas`) com nós para schemas e templates.
+
 ## Unreleased — full English translation
 
 - Added a complete machine-translated English draft of SSP v13.4.0; original PT-BR bytes remain unchanged and authoritative.

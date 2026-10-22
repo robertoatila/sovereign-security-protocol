@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SSPAgentContainmentManifest",
+  "description": "Defines strict bounding context, authorization policies, and operational guardrails for autonomous agents and MCP tools per SSP-09.",
+  "agent_id": "jarvis-subagent-01",
+  "agent_profile": "bounded-code-engineering",
+  "version": "1.0.0",
+  "trust_tier": "TIER-2-RESTRICTED",
+  "authorization": {
+    "model_grants_authority": false,
+    "enforce_external_policy": true,
+    "require_plan_digest_binding": true,
+    "allowed_actions": [
+      "file:read",
+      "file:write:in-tree",
+      "test:execute"
+    ],
+    "denied_actions": [
+      "network:egress:unlisted",
+      "secret:read:raw",
+      "shell:privilege-escalation",
+      "system:shutdown"
+    ]
+  },
+  "mcp_integrations": [
+    {
+      "server_name": "jarvis-sovereign-gateway",
+      "transport": "stdio",
+      "capabilities": [
+        "jarvis_system_status",
+        "jarvis_consult_protocol"
+      ],
+      "per_tool_authorization": true,
+      "isolated_credentials": true
+    }
+  ],
+  "resource_quotas": {
+    "max_execution_time_seconds": 180,
+    "max_token_budget_per_session": 50000,
+    "max_subagent_recursion_depth": 1,
+    "kill_switch_enabled": true
+  },
+  "memory_governance": {
+    "cross_tenant_isolation": true,
+    "redact_pii_and_secrets": true,
+    "retention_policy_days": 30,
+    "untrusted_external_content_policy": "NO_POLICY_ESCALATION"
+  }
+}

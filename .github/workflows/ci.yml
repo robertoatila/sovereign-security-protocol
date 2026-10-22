@@ -1,0 +1,39 @@
+name: Sovereign Security Protocol CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  verify-protocol-integrity:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Validate Protocol Integrity & Crosswalk (SSP-12)
+        run: |
+          python scripts/ssp_tool.py validate
+
+      - name: Verify Bilingual Documentation Parity
+        run: |
+          python scripts/ssp_tool.py check-parity
+
+      - name: Test Release Assurance Gate (SSP-12)
+        run: |
+          python scripts/ssp_tool.py gate --file templates/sample_evidence_record.json
+
+      - name: Print Controls Crosswalk Matrix
+        run: |
+          python scripts/ssp_tool.py matrix

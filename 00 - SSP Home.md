@@ -9,8 +9,10 @@
 - [[protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR|1. Protocolo integral v13.4.0 — PT-BR]]
 - [[protocol/v13.4/SSP_v13.4_FULL_EN_COMMUNITY|2. Tradução integral — English (rascunho automático)]]
 - [[docs/pt-BR/protocolo|3. Resumo comunitário dos 13 controles — PT-BR]]
-- [[docs/pt-BR/adocao-e-evidencias|4. Adoção e evidências]]
-- [[docs/pt-BR/agentes-jarvis-obsidian|5. Agentes, J.A.R.V.I.S. e Obsidian]]
+- [[docs/pt-BR/guia-rapido-adocao|4. Guia rápido de adoção em 3 fases]]
+- [[docs/pt-BR/adocao-e-evidencias|5. Adoção e evidências]]
+- [[docs/pt-BR/agentes-jarvis-obsidian|6. Agentes, J.A.R.V.I.S. e Obsidian]]
+- [[templates/EVIDENCE_RECORD|Modelo de registro de evidências]]
 - [[docs/research/provenance|Proveniência, integridade e licença]]
 - [[docs/research/references|Referências e versões consultadas]]
 - [[docs/research/revisao-v13.4|Problemas observados e melhorias propostas]]
@@ -19,6 +21,7 @@
 
 - [[protocol/v13.4/SSP_v13.4_FULL_EN_COMMUNITY|Complete protocol translation — English review draft (automatic, non-canonical)]]
 - [[docs/en/protocol|13-control community summary — English]]
+- [[docs/en/quickstart-adoption|Quickstart adoption guide in 3 phases]]
 - [[docs/en/adoption-and-evidence|Adoption and evidence — English]]
 - [[docs/en/agentic-jarvis-obsidian|Agents, J.A.R.V.I.S., and Obsidian — English]]
 

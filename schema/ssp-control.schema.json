@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/robertoatila/sovereign-security-protocol/main/schema/ssp-control.schema.json",
+  "title": "SovereignSecurityControlSet",
+  "description": "Schema for machine-readable Sovereign Security Protocol (SSP) controls and evidence requirements.",
+  "type": "object",
+  "required": [
+    "protocol_version",
+    "edition",
+    "status",
+    "controls"
+  ],
+  "properties": {
+    "protocol_version": {
+      "type": "string",
+      "description": "Base canonical protocol version (e.g. 13.4.0)"
+    },
+    "edition": {
+      "type": "string",
+      "description": "Community edition release (e.g. 0.2.0)"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["PROPOSAL", "REVIEW", "STABLE", "CANONICAL"]
+    },
+    "release_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "governance": {
+      "type": "object",
+      "properties": {
+        "canonical_source": { "type": "string" },
+        "license": { "type": "string" },
+        "repository": { "type": "string" }
+      }
+    },
+    "controls": {
+      "type": "array",
+      "minItems": 13,
+      "maxItems": 13,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name_en",
+          "name_pt",
+          "source_domain",
+          "source_sections",
+          "normative_level",
+          "evidence_focus",
+          "minimum_evidence_level",
+          "blocker_criteria"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^SSP-(0[1-9]|1[0-3])$"
+          },
+          "name_en": { "type": "string" },
+          "name_pt": { "type": "string" },
+          "source_domain": { "type": "string" },
+          "source_sections": { "type": "string" },
+          "normative_level": {
+            "type": "string",
+            "enum": ["MUST", "SHOULD", "MAY"]
+          },
+          "evidence_focus": { "type": "string" },
+          "minimum_evidence_level": {
+            "type": "string",
+            "enum": ["L0", "L1", "L2", "L3"]
+          },
+          "blocker_criteria": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "standards_mapping": {
+            "type": "object",
+            "properties": {
+              "owasp_asvs_v4": { "type": "array", "items": { "type": "string" } },
+              "nist_sp_800_53_r5": { "type": "array", "items": { "type": "string" } },
+              "cis_controls_v8": { "type": "array", "items": { "type": "string" } },
+              "iso_27001_2022": { "type": "array", "items": { "type": "string" } },
+              "owasp_llm_top10_2025": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    }
+  }
+}
