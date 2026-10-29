@@ -9,6 +9,13 @@ secrets/
 *.pfx
 *.kdbx
 
+# Python bytecode & test caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+
 # Private runtime state, reports, and editor state
 state/
 reports/private/

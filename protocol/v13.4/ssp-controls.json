@@ -1,8 +1,8 @@
 {
   "protocol_version": "13.4.0",
-  "edition": "0.2.0",
+  "edition": "0.3.0",
   "status": "PROPOSAL",
-  "release_date": "2026-10-22",
+  "release_date": "2026-10-29",
   "governance": {
     "canonical_source": "protocol/v13.4/PROTOCOLO_INTEGRAL_v13.4_PT-BR.md",
     "license": "Apache-2.0",

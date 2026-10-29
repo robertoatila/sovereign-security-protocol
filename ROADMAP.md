@@ -4,7 +4,17 @@ This roadmap is a proposal for the community edition. It does not commit the ups
 
 Este roteiro é uma proposta para a edição comunitária. Não compromete os mantenedores do protocolo upstream nem promete data de release.
 
-## Edition 0.2.0 — Current / Atual (2026-10-22)
+## Edition 0.3.0 — Current / Atual (2026-10-29)
+
+- [x] Universal zero-dependency Security CLI (`ssp.py`) with `init`, `scan`, `blueprint`, `gate`, `validate`, `matrix`, and `--doctor`.
+- [x] Reusable Composite GitHub Action (`action.yml`) for external repositories (`scan` and `gate` modes).
+- [x] Bilingual 7-Layer Practical Code Playbooks (`docs/pt-BR/camadas-por-sistema.md` & `docs/en/layers-by-system.md`).
+- [x] Ecosystem & 50k+★ Open-Source Reference Map (`docs/pt-BR/ecossistema-e-referencias-50k.md` & `docs/en/ecosystem-and-50k-references.md`).
+- [x] Sovereign SVG visual banners and 7-Layer architecture diagrams (`.github/assets/`).
+- [x] Automated unit & integration test suite (`run_tests.py` + `tests/test_ssp_engine.py`).
+- [x] Standard SPDX-recognizable root `LICENSE` (Apache-2.0) and structured GitHub Issue Templates.
+
+## Edition 0.2.0 — Verification baseline / Base de verificação (2026-10-22)
 
 - [x] Machine-readable control specification (`protocol/v13.4/ssp-controls.json`).
 - [x] Formal JSON Schema (`schema/ssp-control.schema.json`).

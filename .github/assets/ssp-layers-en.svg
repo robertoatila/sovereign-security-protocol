@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="540" viewBox="0 0 1280 540" role="img" aria-labelledby="ltitle ldesc">
+  <title id="ltitle">7 Universal Defense-in-Depth Security Layers (SSP v13.4)</title>
+  <desc id="ldesc">Visual diagram of the 7 security layers applicable to any software system: Governance, Identity, API/Inputs, Data/RLS, Infra/Containers, Supply Chain, and Agentic AI/MCP + Release Gate.</desc>
+  <g font-family="Segoe UI, Inter, system-ui, Arial, sans-serif">
+    <rect x="0" y="0" width="1280" height="540" rx="14" fill="#08101c" stroke="#1d334c" stroke-width="2" />
+    <text x="640" y="42" font-size="20" fill="#edf5ff" font-weight="700" text-anchor="middle" letter-spacing="1.2">THE 7 UNIVERSAL DEFENSE-IN-DEPTH LAYERS (FOR ANY SYSTEM)</text>
+    <text x="640" y="66" font-size="14" fill="#89a5be" text-anchor="middle">No single failure compromises the whole system: every layer validates independently and fails closed (DENY).</text>
+
+    <!-- Layer 1 -->
+    <rect x="44" y="88" width="1192" height="52" rx="8" fill="#0e1e33" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="68" y="120" font-size="15" fill="#38bdf8" font-weight="700">LAYER 1 · GOVERNANCE, ASSETS &amp; ZERO SECRETS</text>
+    <text x="485" y="120" font-size="14" fill="#cbd5e1">Asset inventory, threat modeling, zero hardcoded keys, fail-closed defaults</text>
+    <text x="1212" y="120" font-size="13" fill="#5de0ec" font-weight="700" text-anchor="end">SSP-01 · SSP-02 · SSP-05</text>
+
+    <!-- Layer 2 -->
+    <rect x="44" y="150" width="1192" height="52" rx="8" fill="#0e2036" stroke="#5de0ec" stroke-width="1.5" />
+    <text x="68" y="182" font-size="15" fill="#5de0ec" font-weight="700">LAYER 2 · IDENTITY, SESSION &amp; FINE-GRAINED AUTHZ</text>
+    <text x="485" y="182" font-size="14" fill="#cbd5e1">Admin MFA, least privilege, Principal × Action × Resource × Tenant checks (anti-BOLA)</text>
+    <text x="1212" y="182" font-size="13" fill="#5de0ec" font-weight="700" text-anchor="end">SSP-03 · SSP-05</text>
+
+    <!-- Layer 3 -->
+    <rect x="44" y="212" width="1192" height="52" rx="8" fill="#0f2338" stroke="#2dd4bf" stroke-width="1.5" />
+    <text x="68" y="244" font-size="15" fill="#2dd4bf" font-weight="700">LAYER 3 · INPUTS, APIs &amp; BUSINESS INVARIANTS</text>
+    <text x="485" y="244" font-size="14" fill="#cbd5e1">Strict server-side schemas, parameterized queries, anti-replay, idempotency &amp; rate limits</text>
+    <text x="1212" y="244" font-size="13" fill="#2dd4bf" font-weight="700" text-anchor="end">SSP-06</text>
+
+    <!-- Layer 4 -->
+    <rect x="44" y="274" width="1192" height="52" rx="8" fill="#0f2537" stroke="#34d399" stroke-width="1.5" />
+    <text x="68" y="306" font-size="15" fill="#34d399" font-weight="700">LAYER 4 · DATA, RLS ISOLATION &amp; REDACTED LOGS</text>
+    <text x="485" y="306" font-size="14" fill="#cbd5e1">Encryption in transit/at rest, multi-tenant Row-Level Security, PII-free logs, tested restores</text>
+    <text x="1212" y="306" font-size="13" fill="#34d399" font-weight="700" text-anchor="end">SSP-04 · SSP-10 · SSP-11</text>
+
+    <!-- Layer 5 -->
+    <rect x="44" y="336" width="1192" height="52" rx="8" fill="#122436" stroke="#a78bfa" stroke-width="1.5" />
+    <text x="68" y="368" font-size="15" fill="#a78bfa" font-weight="700">LAYER 5 · INFRASTRUCTURE, NETWORK &amp; CONTAINERS</text>
+    <text x="485" y="368" font-size="14" fill="#cbd5e1">Private DB/admin planes (`127.0.0.1`), non-root Docker, microsegmentation &amp; egress filtering</text>
+    <text x="1212" y="368" font-size="13" fill="#a78bfa" font-weight="700" text-anchor="end">SSP-08</text>
+
+    <!-- Layer 6 -->
+    <rect x="44" y="398" width="1192" height="52" rx="8" fill="#172334" stroke="#fbbf24" stroke-width="1.5" />
+    <text x="68" y="430" font-size="15" fill="#fbbf24" font-weight="700">LAYER 6 · SUPPLY CHAIN, DEPENDENCIES &amp; PROVENANCE</text>
+    <text x="485" y="430" font-size="14" fill="#cbd5e1">Deterministic lockfiles, SBOM, CISA KEV + EPSS triage, signatures &amp; SLSA 1.2 provenance</text>
+    <text x="1212" y="430" font-size="13" fill="#fbbf24" font-weight="700" text-anchor="end">SSP-07</text>
+
+    <!-- Layer 7 -->
+    <rect x="44" y="460" width="1192" height="56" rx="8" fill="#0d2926" stroke="#10b981" stroke-width="2" />
+    <text x="68" y="493" font-size="15" fill="#10b981" font-weight="700">LAYER 7 · AGENTIC AI, MCP &amp; RELEASE GATE</text>
+    <text x="485" y="493" font-size="14" fill="#e2e8f0">Policy outside LLM, plan-digest human approval, kill switch &amp; commit-bound release evidence</text>
+    <text x="1212" y="493" font-size="13" fill="#10b981" font-weight="700" text-anchor="end">SSP-09 · SSP-12 · SSP-13</text>
+  </g>
+</svg>

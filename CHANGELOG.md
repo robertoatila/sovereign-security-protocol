@@ -2,6 +2,28 @@
 
 This changelog tracks this repository's community edition, not the canonical source protocol's release history.
 
+## 0.3.0 — 2026-10-29 — Universal 7-Layer Engine, Multi-Stack Playbooks & Visual Architecture
+
+- Added zero-dependency Universal Security CLI (`ssp.py`) allowing any external project to bootstrap SSP security scaffolding (`init`), run 7-Layer heuristic posture checks (`scan` across Python, Node/TS, Go, Rust, Java, SQL, Docker, GitHub Actions, and MCP), inspect stack remediation blueprints (`blueprint`), and enforce strict SSP-12 release gates (`gate` with commit SHA freshness, `N/A` rationale, and `ACCEPTED RISK` expiration verification).
+- Created reusable Composite GitHub Action (`action.yml`) supporting `scan` and `gate` modes out-of-the-box in any CI/CD workflow.
+- Authored side-by-side ❌ Vulnerable vs. ✅ Hardened multi-stack playbooks (`docs/pt-BR/camadas-por-sistema.md` and `docs/en/layers-by-system.md`) covering Web/API (FastAPI/Express), SaaS/PostgreSQL RLS, Docker/UFW loopback binding, Supply Chain pinning, and Agentic AI/MCP containment.
+- Added ecosystem architecture and 50k+★ global open-source security benchmarks guide (`docs/pt-BR/ecossistema-e-referencias-50k.md` and `docs/en/ecosystem-and-50k-references.md`), detailing standalone SSP adoption vs. optional `jarvis-skill-registry` runtime integration.
+- Designed sovereign SVG visual architecture banners and 7-Layer Defense-in-Depth diagrams (`.github/assets/ssp-hero-pt.svg`, `ssp-hero-en.svg`, `ssp-layers-pt.svg`, `ssp-layers-en.svg`).
+- Added automated test battery (`run_tests.py` and `tests/test_ssp_engine.py`) and expanded `.github/workflows/ci.yml` to run unit/integration tests, `--doctor`, self-scan, and release gate evaluation across Python 3.10–3.12.
+- Upgraded root `LICENSE` to standard SPDX-recognizable Apache License 2.0 text while preserving canonical `protocol/v13.4/LICENSE-APACHE-2.0.txt` and `NOTICE.md`.
+- Added GitHub community issue templates (`.github/ISSUE_TEMPLATE/`) and updated `CITATION.cff`, `00 - SSP Home.md`, and `SSP-13.4.canvas`.
+
+### PT-BR
+
+- Adicionada CLI Universal de Segurança sem dependências externas (`ssp.py`), permitindo a qualquer sistema externo inicializar artefatos SSP (`init`), auditar heurísticas das 7 Camadas (`scan` em Python, Node/TS, Go, Rust, Java, SQL, Docker, GitHub Actions e MCP), consultar planos por stack (`blueprint`) e impor o portão formal SSP-12 (`gate` com verificação de commit SHA, justificativa de `N/A` e expiração de `ACCEPTED RISK`).
+- Criada Composite GitHub Action reutilizável (`action.yml`) com modos `scan` e `gate` prontos para qualquer pipeline CI/CD.
+- Elaborados manuais práticos lado a lado (❌ Vulnerável vs. ✅ Blindado) por sistema (`docs/pt-BR/camadas-por-sistema.md` e `docs/en/layers-by-system.md`) cobrindo Web/API, PostgreSQL RLS Multi-Tenant, Docker/UFW em loopback, Supply Chain e Agentes de IA/MCP.
+- Adicionado guia de arquitetura do ecossistema e benchmarks globais 50k+★ (`docs/pt-BR/ecossistema-e-referencias-50k.md` e `docs/en/ecosystem-and-50k-references.md`), detalhando o uso 100% autônomo deste repositório e a integração opcional com `jarvis-skill-registry`.
+- Criados banners visuais e diagramas de Defesa em Profundidade de 7 Camadas em SVG (`.github/assets/ssp-hero-pt.svg`, `ssp-hero-en.svg`, `ssp-layers-pt.svg`, `ssp-layers-en.svg`).
+- Adicionada bateria automatizada de testes (`run_tests.py` e `tests/test_ssp_engine.py`) e expandido `.github/workflows/ci.yml` em Python 3.10–3.12.
+- Atualizado o `LICENSE` raiz com o texto integral padrão Apache License 2.0 para detecção SPDX automática no GitHub, preservando intactos os arquivos canônicos da fonte.
+- Adicionados templates comunitários de Issues (`.github/ISSUE_TEMPLATE/`) e atualizados `CITATION.cff`, `00 - SSP Home.md` e `SSP-13.4.canvas`.
+
 ## 0.2.0 — 2026-10-22 — Verification Engine & Machine-Readable Controls
 
 - Added machine-readable JSON control specification (`protocol/v13.4/ssp-controls.json`) and formal JSON Schema (`schema/ssp-control.schema.json`).

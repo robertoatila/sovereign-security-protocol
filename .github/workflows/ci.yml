@@ -2,12 +2,15 @@ name: Sovereign Security Protocol CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
+
+permissions:
+  contents: read
 
 jobs:
-  verify-protocol-integrity:
+  verify-protocol-and-engine:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -22,18 +25,14 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Validate Protocol Integrity & Crosswalk (SSP-12)
-        run: |
-          python scripts/ssp_tool.py validate
+      - name: Run Master Executable Test Battery
+        run: python run_tests.py
 
-      - name: Verify Bilingual Documentation Parity
-        run: |
-          python scripts/ssp_tool.py check-parity
+      - name: Run Cryptographic Provenance & Repository Doctor
+        run: python ssp.py --doctor
 
-      - name: Test Release Assurance Gate (SSP-12)
-        run: |
-          python scripts/ssp_tool.py gate --file templates/sample_evidence_record.json
+      - name: Run 7-Layer Self-Scan (Dogfooding SSP)
+        run: python ssp.py scan --target . --lang en
 
-      - name: Print Controls Crosswalk Matrix
-        run: |
-          python scripts/ssp_tool.py matrix
+      - name: Verify SSP-12 Release Assurance Gate
+        run: python ssp.py gate --file templates/sample_evidence_record.json

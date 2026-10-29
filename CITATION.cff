@@ -1,8 +1,8 @@
 cff-version: 1.2.0
-message: "Cite the community edition by exact version and cite SSP v13.4.0 at the exact source commit in docs/research/provenance.md. The community-edition materials and the reproduced source have separate license notices."
-title: "Sovereign Security Protocol v13.4.0 — Community Edition"
-version: 0.1.0
-date-released: 2026-10-01
-license: CC-BY-4.0
+message: "Cite the community edition by exact version and cite SSP v13.4.0 at the exact source commit in docs/research/provenance.md. Code and canonical source are Apache-2.0; community prose is CC-BY-4.0."
+title: "Sovereign Security Protocol v13.4.0 — Community Edition & 7-Layer Universal Engine"
+version: 0.3.0
+date-released: 2026-10-29
+license: Apache-2.0
 url: https://github.com/robertoatila/sovereign-security-protocol
 repository-code: https://github.com/robertoatila/sovereign-security-protocol

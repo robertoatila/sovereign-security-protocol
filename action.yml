@@ -1,0 +1,58 @@
+name: "Sovereign Security Protocol (SSP) Gate & 7-Layer Scanner"
+description: "Apply SSP v13.4 7-Layer Defense-in-Depth baseline scanning or SSP-12 Release Assurance Gate to any codebase with zero dependencies."
+author: "robertoatila"
+
+branding:
+  icon: "shield"
+  color: "blue"
+
+inputs:
+  mode:
+    description: "Execution mode: 'scan' (7-layer baseline scan) or 'gate' (SSP-12 release evidence evaluation)"
+    required: false
+    default: "scan"
+  target:
+    description: "Target directory to scan (used when mode == 'scan')"
+    required: false
+    default: "."
+  evidence-file:
+    description: "Path to SSP-12 evidence JSON file (used when mode == 'gate')"
+    required: false
+    default: ".ssp/evidence.json"
+  strict:
+    description: "Fail on warnings as well as blockers ('true' or 'false')"
+    required: false
+    default: "false"
+  lang:
+    description: "Output language ('en' or 'pt')"
+    required: false
+    default: "en"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+
+    - name: Run Sovereign Security Protocol Engine
+      shell: bash
+      env:
+        SSP_MODE: ${{ inputs.mode }}
+        SSP_TARGET: ${{ inputs.target }}
+        SSP_EVIDENCE: ${{ inputs.evidence-file }}
+        SSP_STRICT: ${{ inputs.strict }}
+        SSP_LANG: ${{ inputs.lang }}
+        ACTION_PATH: ${{ github.action_path }}
+      run: |
+        set -euo pipefail
+        if [ "$SSP_MODE" = "gate" ]; then
+          python "$ACTION_PATH/ssp.py" gate --file "$SSP_EVIDENCE" --target "$SSP_TARGET"
+        else
+          STRICT_FLAG=""
+          if [ "$SSP_STRICT" = "true" ]; then
+            STRICT_FLAG="--strict"
+          fi
+          python "$ACTION_PATH/ssp.py" scan --target "$SSP_TARGET" --lang "$SSP_LANG" $STRICT_FLAG
+        fi

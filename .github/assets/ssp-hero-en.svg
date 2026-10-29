@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560" role="img" aria-labelledby="title desc">
+  <title id="title">SSP v13.4 — Sovereign Security Protocol</title>
+  <desc id="desc">Official banner for the Sovereign Security Protocol (SSP) Community Edition: 7 universal defense-in-depth layers, 13 traceable controls, and zero-dependency CLI engine for any system.</desc>
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070d17" />
+      <stop offset="100%" stop-color="#0d1829" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5de0ec" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+  <g font-family="Segoe UI, Inter, system-ui, -apple-system, Arial, sans-serif">
+    <rect x="0" y="0" width="1400" height="560" rx="16" fill="url(#bgGrad)" stroke="#1e344d" stroke-width="2" />
+    <g opacity="0.18" stroke="#2b455d" stroke-width="1">
+      <path d="M0 70 H1400 M0 140 H1400 M0 210 H1400 M0 280 H1400 M0 350 H1400 M0 420 H1400 M0 490 H1400" />
+      <path d="M70 0 V560 M140 0 V560 M210 0 V560 M280 0 V560 M350 0 V560 M420 0 V560 M490 0 V560 M560 0 V560 M630 0 V560 M700 0 V560 M770 0 V560 M840 0 V560 M910 0 V560 M980 0 V560 M1050 0 V560 M1120 0 V560 M1190 0 V560 M1260 0 V560 M1330 0 V560" />
+    </g>
+
+    <!-- Top Badge -->
+    <g transform="translate(56 44)">
+      <path d="M18 2 L34 9 V22 C34 31 27 38 18 41 C9 38 2 31 2 22 V9 Z" fill="#0f2336" stroke="#5de0ec" stroke-width="2.5" />
+      <path d="M11 21 L16 26 L26 15" fill="none" stroke="#34d399" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="48" y="27" font-size="15" fill="#5de0ec" font-weight="700" letter-spacing="2.2">DEFENSE IN DEPTH · EVIDENCE-BOUND SECURITY</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="56" y="182" font-size="76" fill="#edf5ff" font-weight="700" letter-spacing="-1">SSP v13.4</text>
+    <text x="58" y="232" font-size="24" fill="url(#accentGrad)" font-weight="700" letter-spacing="2.5">SOVEREIGN SECURITY PROTOCOL</text>
+    <text x="58" y="284" font-size="21" fill="#b4c8da" font-weight="400">Apply 7 verifiable security layers to any web app, API, cloud stack, or AI Agent.</text>
+    <text x="58" y="316" font-size="18" fill="#89a5be" font-weight="400">100% open, bilingual (EN &amp; PT-BR), zero external dependencies — from code to release gate.</text>
+
+    <path d="M58 352 H760" stroke="#243e59" stroke-width="1.5" />
+
+    <!-- Feature Pillars -->
+    <g font-size="18" fill="#edf5ff" font-weight="500">
+      <circle cx="66" cy="392" r="4" fill="#5de0ec" />
+      <text x="82" y="398">7 Universal Layers (Web, DB, Cloud, AI/MCP)</text>
+      <circle cx="480" cy="392" r="4" fill="#34d399" />
+      <text x="496" y="398">Sovereign CLI (`python ssp.py scan / init`)</text>
+
+      <circle cx="66" cy="438" r="4" fill="#5de0ec" />
+      <text x="82" y="444">13 Traceable Controls (OWASP, NIST, SLSA, ISO)</text>
+      <circle cx="480" cy="438" r="4" fill="#34d399" />
+      <text x="496" y="444">J.A.R.V.I.S. Ecosystem &amp; GitHub Action</text>
+    </g>
+
+    <text x="58" y="514" font-size="12" fill="#7c98b3" letter-spacing="1.2">FULL 6,678-LINE SOURCE + EXECUTABLE COMMUNITY EDITION · FAIL-CLOSED BY DESIGN</text>
+
+    <!-- Right Concentric 7-Layer Shield Architecture -->
+    <g transform="translate(1095 280)">
+      <circle cx="0" cy="0" r="210" fill="none" stroke="#1e3a56" stroke-width="1.5" stroke-dasharray="4 8" />
+      <circle cx="0" cy="0" r="178" fill="#0a1626" fill-opacity="0.7" stroke="#284b6e" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="144" fill="#0d1d31" stroke="#366591" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="110" fill="#10253e" stroke="#5de0ec" stroke-width="2" />
+      <circle cx="0" cy="0" r="74" fill="#0b1f2e" stroke="#34d399" stroke-width="2.5" />
+
+      <line x1="0" y1="-210" x2="0" y2="-110" stroke="#2b4c6f" stroke-width="1.5" />
+      <line x1="182" y1="-105" x2="95" y2="-55" stroke="#2b4c6f" stroke-width="1.5" />
+      <line x1="182" y1="105" x2="95" y2="55" stroke="#2b4c6f" stroke-width="1.5" />
+      <line x1="0" y1="210" x2="0" y2="110" stroke="#2b4c6f" stroke-width="1.5" />
+      <line x1="-182" y1="105" x2="-95" y2="55" stroke="#2b4c6f" stroke-width="1.5" />
+      <line x1="-182" y1="-105" x2="-95" y2="-55" stroke="#2b4c6f" stroke-width="1.5" />
+
+      <circle cx="0" cy="-178" r="6" fill="#5de0ec" />
+      <circle cx="154" cy="-89" r="6" fill="#5de0ec" />
+      <circle cx="154" cy="89" r="6" fill="#34d399" />
+      <circle cx="0" cy="178" r="6" fill="#34d399" />
+      <circle cx="-154" cy="89" r="6" fill="#5de0ec" />
+      <circle cx="-154" cy="-89" r="6" fill="#34d399" />
+
+      <path d="M0 -34 L28 -22 V0 C28 19 16 32 0 38 C-16 32 -28 19 -28 0 V-22 Z" fill="#112b3c" stroke="#5de0ec" stroke-width="2.5" />
+      <path d="M-10 1 L-3 8 L12 -7" fill="none" stroke="#34d399" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+      <text x="0" y="-188" font-size="12" fill="#9bc2e0" font-weight="600" text-anchor="middle" letter-spacing="1.5">EDGE &amp; API</text>
+      <text x="195" y="-92" font-size="12" fill="#9bc2e0" font-weight="600" text-anchor="start" letter-spacing="1">AUTHZ &amp; RLS</text>
+      <text x="195" y="96" font-size="12" fill="#9bc2e0" font-weight="600" text-anchor="start" letter-spacing="1">SUPPLY CHAIN</text>
+      <text x="0" y="202" font-size="12" fill="#34d399" font-weight="700" text-anchor="middle" letter-spacing="1.5">RELEASE GATE (SSP-12)</text>
+      <text x="-195" y="96" font-size="12" fill="#9bc2e0" font-weight="600" text-anchor="end" letter-spacing="1">AI &amp; MCP</text>
+      <text x="-195" y="-92" font-size="12" fill="#9bc2e0" font-weight="600" text-anchor="end" letter-spacing="1">FAIL-CLOSED</text>
+      <text x="0" y="56" font-size="11" fill="#5de0ec" font-weight="700" text-anchor="middle" letter-spacing="1.8">SOVEREIGN CORE</text>
+    </g>
+  </g>
+</svg>

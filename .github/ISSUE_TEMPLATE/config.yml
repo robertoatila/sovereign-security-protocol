@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "🔒 Security Vulnerability Report (Private / Privado)"
+    url: "https://github.com/robertoatila/sovereign-security-protocol/blob/main/SECURITY.md"
+    about: "Do NOT report active vulnerabilities in public issues. Read SECURITY.md first."
+  - name: "🧠 Sister Project: J.A.R.V.I.S. Skill Registry & Cognitive Runtime"
+    url: "https://github.com/robertoatila/jarvis-skill-registry"
+    about: "Explore the local-first cognitive runtime and MCP gateway aligned with SSP v13.4."

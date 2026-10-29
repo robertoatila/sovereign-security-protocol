@@ -1,6 +1,6 @@
 # Guia Rápido de Adoção da SSP v13.4
 
-Este guia orienta times de engenharia, arquitetos e desenvolvedores de agentes autônomos na implementação prática e progressiva do **Protocolo de Segurança Soberana (SSP)**.
+Este guia orienta times de engenharia, arquitetos e desenvolvedores de agentes autônomos na implementação prática e progressiva do **Protocolo de Segurança Soberana (SSP)** em **qualquer sistema**, usando apenas este repositório.
 
 ---
 
@@ -13,14 +13,36 @@ Este guia orienta times de engenharia, arquitetos e desenvolvedores de agentes a
 
 ---
 
-## 2. Jornada de Adoção em 3 Fases
+## 2. Aplicação Imediata em Qualquer Sistema (60 Segundos)
+
+Com Python 3.10+ (apenas biblioteca padrão, zero dependências externas), inicialize e audite qualquer projeto local:
+
+```bash
+# 1. Gerar artefatos .ssp/ customizados para a stack detectada no projeto alvo
+python ssp.py init --target /caminho/do/seu-sistema --lang pt
+
+# 2. Auditar as 7 Camadas de Segurança no projeto alvo
+python ssp.py scan --target /caminho/do/seu-sistema --lang pt
+
+# 3. Consultar guia prático por stack (api | database | docker | ai-mcp | cli)
+python ssp.py blueprint --stack api --lang pt
+
+# 4. Impor o Portão de Release SSP-12 antes de deploy em produção
+python ssp.py gate --file /caminho/do/seu-sistema/.ssp/evidence-record.json --commit <git-sha>
+```
+
+Para integrar em pipelines GitHub Actions, adicione `robertoatila/sovereign-security-protocol@main` via [`action.yml`](../../action.yml). Para exemplos práticos de código **❌ Vulnerável vs. ✅ Blindado**, consulte [`camadas-por-sistema.md`](camadas-por-sistema.md).
+
+---
+
+## 3. Jornada de Adoção em 3 Fases
 
 ### Fase 1: Dia 1 — Baseline Soberano (L1)
 *Objetivo: Estabelecer inventário, fronteiras e responsabilidades.*
 
-- [ ] **Mapear Escopo e Ativos (SSP-01):** Identificar repositórios, serviços, bancos e owners.
-- [ ] **Inventário de Dependências (SSP-07):** Versionar lockfiles (`package-lock.json`, `poetry.lock`, etc.).
-- [ ] **Auditar Credenciais Padrão (SSP-05):** Garantir ausência de senhas default ou tokens em repositórios.
+- [ ] **Mapear Escopo e Ativos (SSP-01):** Identificar repositórios, serviços, bancos e owners (`python ssp.py init`).
+- [ ] **Inventário de Dependências (SSP-07):** Versionar lockfiles (`package-lock.json`, `poetry.lock`, `go.sum`, `Cargo.lock`).
+- [ ] **Auditar Credenciais Padrão (SSP-05):** Garantir ausência de senhas default ou tokens em repositórios (`python ssp.py scan`).
 - [ ] **Declaração de Conformidade (SSP-13):** Registrar obrigações regulatórias (LGPD, GDPR, SOC 2).
 
 ### Fase 2: Semana 1 — Engenharia Segura & Portões CI (L2)
@@ -30,7 +52,7 @@ Este guia orienta times de engenharia, arquitetos e desenvolvedores de agentes a
 - [ ] **Autorização Fina (SSP-03):** Implementar verificações no nível de recurso/tenant (prevenção a BOLA/IDOR).
 - [ ] **Isolamento de Banco e RLS (SSP-04):** Ativar criptografia em trânsito/repouso e Row-Level Security.
 - [ ] **Validação Estrita de Entrada (SSP-06):** Sanitização e tipagem em runtime em endpoints e webhooks.
-- [ ] **Isolamento de Infraestrutura (SSP-08):** Portas de bancos e planos administrativos fora da Internet pública.
+- [ ] **Isolamento de Infraestrutura (SSP-08):** Portas de bancos e planos administrativos em `127.0.0.1` / rede privada.
 - [ ] **Auditoria e Logs Redigidos (SSP-11):** Logs estruturados sem vazamento de PII ou credenciais.
 
 ### Fase 3: Mês 1 — IA Confinada, Recuperação & Decisão de Release (L3)
@@ -41,29 +63,26 @@ Este guia orienta times de engenharia, arquitetos e desenvolvedores de agentes a
   - Exigir aprovação humana vinculada ao hash da ação/plano para efeitos destrutivos ou de alto custo.
   - Ativar kill switch operacional e timeout estrito.
 - [ ] **Exercício de Restore (SSP-10):** Realizar e comprovar teste de restauração de backup com RTO/RPO documentados.
-- [ ] **Portão Formal de Release (SSP-12):** Executar `python scripts/ssp_tool.py gate -f <registro-evidencia.json>` antes de cada implantação crítica.
+- [ ] **Portão Formal de Release (SSP-12):** Executar `python ssp.py gate -f <registro-evidencia.json>` antes de cada implantação crítica.
 
 ---
 
-## 3. Uso das Ferramentas Locais
-
-Valide a integridade do protocolo e das evidências localmente:
+## 4. Verificação de Integridade do Próprio Repositório
 
 ```bash
-# Validar links, esquemas JSON e crosswalk da SSP
-python scripts/ssp_tool.py validate
+# Diagnóstico completo (SHA-256 canônico, links, Canvas, JSON Schema e paridade PT/EN)
+python ssp.py --doctor
 
-# Visualizar a matriz de controles e níveis mínimos
-python scripts/ssp_tool.py matrix
-
-# Avaliar aprovação de release (Gate SSP-12)
-python scripts/ssp_tool.py gate --file templates/sample_evidence_record.json
+# Visualizar a matriz de 13 controles e níveis mínimos
+python ssp.py matrix --lang pt
 ```
 
 ---
 
-## 4. Modelos e Artefatos Operacionais
+## 5. Modelos e Artefatos Operacionais
 
+- Manual Prático por Sistema (❌ vs ✅): [`docs/pt-BR/camadas-por-sistema.md`](camadas-por-sistema.md)
+- Arquitetura & Referências 50k+★: [`docs/pt-BR/ecossistema-e-referencias-50k.md`](ecossistema-e-referencias-50k.md)
 - Registro de Evidências: [`templates/EVIDENCE_RECORD.md`](../../templates/EVIDENCE_RECORD.md)
 - Solicitação de Exceção de Segurança: [`templates/SECURITY_EXCEPTION.md`](../../templates/SECURITY_EXCEPTION.md)
 - Manifesto de Contenção de Agentes/MCP: [`templates/AI_AGENT_MANIFEST.json`](../../templates/AI_AGENT_MANIFEST.json)
